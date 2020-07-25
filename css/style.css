@@ -1,0 +1,117 @@
+html,body{
+  margin: 0;
+  height: 96%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  text-align: center;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 98%);
+}
+
+h1{
+  margin:0;
+  font-weight: 400;
+}
+
+h3{
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0.5rem 0;
+}
+
+.delivery{
+margin: 50px 0 0;
+}
+
+.tech{
+  font-weight: 600;
+}
+
+.description{
+  width:498px;
+  margin: 1rem auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  "first second third"
+  ". fourth .";
+  padding: 10px;
+  grid-gap: 26px;
+  width: 1077px;
+  margin: 50px auto;
+}
+
+.grid-item{
+  background-color: #fff;
+  padding:20px;
+  width: 300px;
+  height: 200px;
+  text-align: left;
+  border-radius: 10px;
+  font-size: 14px;
+  box-shadow: 0 0 26px -8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.grid-item img{
+  float: right;
+  height: 60px;
+  width: 60px;
+  margin: 10px;
+}
+
+.supervisor{
+  grid-area: first;
+  border-top: 5px solid hsl(180, 62%, 55%);
+  margin-top: 127px;
+}
+
+.team-bluider{
+  grid-area:second;
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.calculator{
+  grid-area:third;
+  border-top: 5px solid hsl(212, 86%, 64%);
+  margin-top: 127px;
+}
+
+.karma{
+  grid-area: fourth;
+  border-top: 5px solid hsl(34, 97%, 64%);
+  margin-top: -127px;
+}
+
+@media (max-width:1200px) {
+  html,body{
+    margin: 0;
+    height: 100%;
+  }
+
+  .description{
+    width:auto;
+  }
+
+  .grid-container {
+    display: block;
+    width: 100%;
+  }
+
+  .grid-item{
+    background-color: #fff;
+    padding:20px;
+    width: 300px;
+    height: 200px;
+    text-align: left;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: 0 0 26px -8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 20px auto;
+  }
+
+
+}
